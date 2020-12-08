@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+
+    <ImageButton
+        android:layout_marginTop="30dp"
+        android:id="@+id/selectPostImage"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/select_image"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="37dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/postDiscription"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input"
+        android:ems="10"
+        android:hint="Say somthing about your Post here"
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+    <Button
+        android:id="@+id/updatePostButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:padding="10dp"
+        android:text="Update Post"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="433dp" />
+</LinearLayout>

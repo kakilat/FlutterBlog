@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/register"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:orientation="vertical"
+         android:layout_height="match_parent">
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:id="@+id/setting_profile_image"
+             android:layout_width="200dp"
+             android:layout_height="200dp"
+             android:layout_marginTop="20dp"
+             android:layout_marginLeft="80dp"
+             android:src="@drawable/profile" />
+
+         <EditText
+             android:id="@+id/setting_status"
+             android:layout_width="match_parent"
+             android:layout_margin="19dp"
+             android:layout_height="wrap_content"
+             android:background="@drawable/input"
+             android:ems="10"
+             android:textSize="20sp"
+             android:textColor="@android:color/background_dark"
+             android:hint="Profile Status"
+             android:inputType="textMultiLine"
+             android:padding="19dp" />
+
+         <EditText
+             android:id="@+id/setting_usernamme"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/setup_user_name"
+             android:layout_marginTop="6dp"
+             android:background="@drawable/input"
+             android:hint="user name"
+             android:inputType="textMultiLine"
+             android:padding="14dp" />
+
+         <EditText
+             android:id="@+id/setting_profile_fullname"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="8dp"
+             android:background="@drawable/input"
+             android:ems="10"
+             android:hint="Full name"
+             android:padding="14dp" />
+
+         <EditText
+             android:id="@+id/settin_country"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="6dp"
+             android:background="@drawable/input"
+             android:ems="10"
+             android:hint="your Country"
+             android:padding="14dp" />
+
+         <EditText
+             android:id="@+id/setting_dob"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="6dp"
+             android:background="@drawable/input"
+             android:ems="10"
+             android:hint="Date of Birth"
+             android:padding="14dp"/>
+
+
+         <EditText
+             android:id="@+id/settig_gender"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="6dp"
+             android:background="@drawable/input"
+             android:ems="10"
+             android:hint="Gender"
+             android:padding="14dp" />
+         <EditText
+             android:id="@+id/setting_relation_ship_status"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="6dp"
+             android:background="@drawable/input"
+             android:ems="10"
+             android:hint="Relationship Status"
+             android:padding="14dp" />
+
+         <Button
+             android:id="@+id/update_account_setting_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="70dp"
+             android:layout_marginRight="70dp"
+             android:layout_marginBottom="42dp"
+             android:layout_marginTop="10dp"
+             android:background="@drawable/button"
+             android:text="Save Account Information" />
+
+
+     </LinearLayout>
+ </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "183710373256",
+    "firebase_url": "https://habeshamemes-292eb.firebaseio.com",
+    "project_id": "habeshamemes-292eb",
+    "storage_bucket": "habeshamemes-292eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183710373256:android:fed97249eebc3cbc14963d",
+        "android_client_info": {
+          "package_name": "com.kalkidan.habeshamemes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183710373256-90u8iks5vdsnjj5978te24g59gespcpa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kalkidan.habeshamemes",
+            "certificate_hash": "c5a5edaef3a3452124dd267eecc831946a6eca43"
+          }
+        },
+        {
+          "client_id": "183710373256-hfrf5s0knge8huonijecsjv5ntevrdmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCm2qH5SJij5uM0shOV2yl-o0CJ0eRe4XQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183710373256-hfrf5s0knge8huonijecsjv5ntevrdmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

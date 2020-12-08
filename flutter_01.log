@@ -1,0 +1,109 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+ProcessException: ProcessException: Process exited abnormally:
+Exception in thread "main" java.lang.RuntimeException: Timeout of 120000 reached waiting for exclusive access to file: C:\Users\kalkidan\.gradle\wrapper\dists\gradle-4.10.2-all\9fahxiiecdb76a5g3aw9oi8rv\gradle-4.10.2-all.zip
+	at org.gradle.wrapper.ExclusiveFileAccessManager.access(ExclusiveFileAccessManager.java:61)
+	at org.gradle.wrapper.Install.createDist(Install.java:48)
+	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:128)
+	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:61)
+  Command: C:\Users\kalkidan\Downloads\Telegram Desktop\flutter\blog\android\gradlew.bat -v
+
+```
+#0      RunResult.throwException (package:flutter_tools/src/base/process.dart:140:5)
+#1      _DefaultProcessUtils.run (package:flutter_tools/src/base/process.dart:274:19)
+<asynchronous suspension>
+#2      _initializeGradle (package:flutter_tools/src/android/gradle.dart:329:24)
+<asynchronous suspension>
+#3      GradleUtils.getExecutable (package:flutter_tools/src/android/gradle.dart:45:33)
+<asynchronous suspension>
+#4      _readGradleProject (package:flutter_tools/src/android/gradle.dart:223:44)
+<asynchronous suspension>
+#5      GradleUtils.getAppProject (package:flutter_tools/src/android/gradle.dart:55:46)
+<asynchronous suspension>
+#6      getGradleAppOut (package:flutter_tools/src/android/gradle.dart:143:29)
+<asynchronous suspension>
+#7      AndroidApk.fromAndroidProject (package:flutter_tools/src/application_package.dart:168:23)
+<asynchronous suspension>
+#8      ApplicationPackageFactory.getPackageForPlatform (package:flutter_tools/src/application_package.dart:47:32)
+<asynchronous suspension>
+#9      FlutterDevice.runHot (package:flutter_tools/src/resident_runner.dart:356:56)
+<asynchronous suspension>
+#10     HotRunner.run (package:flutter_tools/src/run_hot.dart:258:39)
+<asynchronous suspension>
+#11     RunCommand.runCommand (package:flutter_tools/src/commands/run.dart:480:37)
+<asynchronous suspension>
+#12     FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:527:18)
+#13     _asyncThenWrapperHelper.<anonymous closure> (dart:async-patch/async_patch.dart:71:64)
+#14     _rootRunUnary (dart:async/zone.dart:1132:38)
+#15     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#16     _FutureListener.handleValue (dart:async/future_impl.dart:137:18)
+#17     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:678:45)
+#18     Future._propagateToListeners (dart:async/future_impl.dart:707:32)
+#19     Future._completeWithValue (dart:async/future_impl.dart:522:5)
+#20     _AsyncAwaitCompleter.complete (dart:async-patch/async_patch.dart:30:15)
+#21     _completeOnAsyncReturn (dart:async-patch/async_patch.dart:288:13)
+#22     RunCommand.usageValues (package:flutter_tools/src/commands/run.dart)
+#23     _asyncThenWrapperHelper.<anonymous closure> (dart:async-patch/async_patch.dart:71:64)
+#24     _rootRunUnary (dart:async/zone.dart:1132:38)
+#25     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#26     _FutureListener.handleValue (dart:async/future_impl.dart:137:18)
+#27     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:678:45)
+#28     Future._propagateToListeners (dart:async/future_impl.dart:707:32)
+#29     Future._completeWithValue (dart:async/future_impl.dart:522:5)
+#30     _AsyncAwaitCompleter.complete (dart:async-patch/async_patch.dart:30:15)
+#31     _completeOnAsyncReturn (dart:async-patch/async_patch.dart:288:13)
+#32     IosProject.isSwift (package:flutter_tools/src/project.dart)
+#33     _asyncThenWrapperHelper.<anonymous closure> (dart:async-patch/async_patch.dart:71:64)
+#34     _rootRunUnary (dart:async/zone.dart:1132:38)
+#35     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#36     _FutureListener.handleValue (dart:async/future_impl.dart:137:18)
+#37     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:678:45)
+#38     Future._propagateToListeners (dart:async/future_impl.dart:707:32)
+#39     Future._completeWithValue (dart:async/future_impl.dart:522:5)
+#40     Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:552:7)
+#41     _rootRun (dart:async/zone.dart:1124:13)
+#42     _CustomZone.run (dart:async/zone.dart:1021:19)
+#43     _CustomZone.runGuarded (dart:async/zone.dart:923:7)
+#44     _CustomZone.bindCallbackGuarded.<anonymous closure> (dart:async/zone.dart:963:23)
+#45     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#46     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#47     _runPendingImmediateCallback (dart:isolate-patch/isolate_patch.dart:116:13)
+#48     _RawReceivePortImpl._handleMessage (dart:isolate-patch/isolate_patch.dart:173:5)
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel dev, v1.10.6, on Microsoft Windows [Version 10.0.17134.1184], locale
+    en-US)
+    [32m•[39m Flutter version 1.10.6 at D:\sw\flutter
+    [32m•[39m Framework revision cc3ca9a916 (4 months ago), 2019-09-25 10:57:58 -0400
+    [32m•[39m Engine revision 63949eb0fd
+    [32m•[39m Dart version 2.6.0 (build 2.6.0-dev.2.0 69b5681546)
+
+[32m[✓][39m Android toolchain - develop for Android devices (Android SDK version 28.0.3)
+    [32m•[39m Android SDK at C:\Users\kalkidan\AppData\Local\Android\sdk
+    [32m•[39m Android NDK location not configured (optional; useful for native profiling support)
+    [32m•[39m Platform android-28, build-tools 28.0.3
+    [32m•[39m Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    [32m•[39m Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b03)
+    [32m•[39m All Android licenses accepted.
+
+[32m[✓][39m Android Studio (version 3.5)
+    [32m•[39m Android Studio at C:\Program Files\Android\Android Studio
+    [32m•[39m Flutter plugin version 42.1.1
+    [32m•[39m Dart plugin version 191.8593
+    [32m•[39m Java version OpenJDK Runtime Environment (build 1.8.0_202-release-1483-b03)
+
+[32m[✓][39m Connected device (1 available)
+    [32m•[39m Android SDK built for x86 • emulator-5554 • android-x86 • Android 7.1.1 (API 25)
+      (emulator)
+
+[32m•[39m No issues found!
+```

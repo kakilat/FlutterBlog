@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "60039212329",
+    "firebase_url": "https://nama-6fd18.firebaseio.com",
+    "project_id": "nama-6fd18",
+    "storage_bucket": "nama-6fd18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60039212329:android:3bd87df35d97b300765b38",
+        "android_client_info": {
+          "package_name": "com.kalkidan.nama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "60039212329-k24g3cq3kv93fj8c8a8rlps5lpa160gf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kalkidan.nama",
+            "certificate_hash": "c5a5edaef3a3452124dd267eecc831946a6eca43"
+          }
+        },
+        {
+          "client_id": "60039212329-b3cnh0hh952hrse7ki1fdn73n9vcism7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjtZm7a_32X5uNNZ6KWUcoGqbsNeB8uLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "60039212329-b3cnh0hh952hrse7ki1fdn73n9vcism7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
